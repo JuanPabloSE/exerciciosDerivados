@@ -9,7 +9,7 @@ public class Simulado05 {
         int N = sc.nextInt();
         int cem, cinquenta, vinte, dez, cinco, dois, resto;
 
-        if(N <= 0 || N == 1 || N == 3) {
+        if (N <= 0 || N == 1 || N == 3) {
             System.out.println("Valor invalido");
         }
 
