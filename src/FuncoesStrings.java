@@ -9,9 +9,9 @@ public class FuncoesStrings {
         /* Funções de Strings em JAVA */
 
         System.out.println("Original: -" + original + "-");
-        String s01 = original.toLowerCase(); // TRANSFORMA TUDO EM LETRAS MINÚSCULAS
-        String s02 = original.toUpperCase(); // TRANSFORMA TUDO EM LETRAS MAIÚSCULAS
-        String s03 = original.trim(); // ELIMINA OS ESPAÇOS NOS CANTOS DA STRING
+        String s01 = original.toLowerCase(); // TRANSFORMA TUDO EM LETRAS MINÚSCULAS.
+        String s02 = original.toUpperCase(); // TRANSFORMA TUDO EM LETRAS MAIÚSCULAS.
+        String s03 = original.trim(); // ELIMINA OS ESPAÇOS NOS CANTOS DA STRING.
         String s04 = original.substring(2); // PEGA SOMENTE AS LETRAS DA POSIÇÃO INFORMADA EM DIANTE.
         String s05 = original.substring(2, 9); // PEGA SOMENTE AS LETRAS DAS POSIÇÕES INFORMADAS EM DIANTE E VOLTA.
         String s06 = original.replace('a', 'x'); // SUBSTITUI UM CARACTER/LETRA POR OUTRA.
