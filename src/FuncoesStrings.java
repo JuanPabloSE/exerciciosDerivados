@@ -29,7 +29,14 @@ public class FuncoesStrings {
         System.out.println("Index OF 'bc': " + i);
         System.out.println("Last Index OF 'bc': " + j);
 
+        // FUNÇÃO SPLIT - RECEBE UM SEPARADOR E GERA UM VETOR COM AS PARTES DA STRING.
+        String s = "potato apple lemon";
 
+        String [] vect = s.split(" ");
+
+        System.out.println(vect[0]);
+        System.out.println(vect[1]);
+        System.out.println(vect[2]);
 
 
         sc.close();
