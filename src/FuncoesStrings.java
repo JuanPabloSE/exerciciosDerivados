@@ -6,7 +6,7 @@ public class FuncoesStrings {
 
         String original = "abcde FGHIJ ABC abc DEFEG   ";
 
-        // Funções de Strings em JAVA
+        /* Funções de Strings em JAVA */
 
         System.out.println("Original: -" + original + "-");
         String s01 = original.toLowerCase(); // TRANSFORMA TUDO EM LETRAS MINÚSCULAS
