@@ -52,8 +52,7 @@ public class FuncoesSintaxe01 {
 
     // FUNÇÃO 04 - DIFERENÇA
     public static int diferenca(int maior, int menor){
-        int novoAuxiliar = maior - menor;
-        return novoAuxiliar;
+        return maior - menor;
     }
 
     // FUNCÃO 05 - DIFERENCA
