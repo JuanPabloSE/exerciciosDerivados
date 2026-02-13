@@ -11,14 +11,31 @@ public class FuncoesSintaxe01 {
         int y = sc.nextInt();
         int z = sc.nextInt();
 
+        int higher = max(x,y,z);
         int lowest = min(x, y, z);
+        int resultadoDiferenca = diferenca(higher, lowest);
 
-        mostreResultado(lowest);
+        showResult(resultadoDiferenca);
 
         sc.close();
     }
 
-    // FUNÇÃO 02
+    // FUNCÃO 02 - MAIOR NÚMERO
+    public static int max(int a, int b, int c){
+        int auxiliar; // VARIÁVEL AUXILIADORA - RECEBERÁ O RESULTADO E RETORNARÁ.
+        if(a > b && a > c){
+            auxiliar = a;
+        }
+        else if(b > c){
+            auxiliar = b;
+        }
+        else{
+            auxiliar = c;
+        }
+        return auxiliar;
+    }
+
+    // FUNÇÃO 03 - MENOR NÚMERO
     public static int min(int a, int b, int c){
         int aux; // VARIÁVEL AUXILIADORA - RECEBERÁ O RESULTADO E RETORNARÁ.
         if (a < b && a < c){
@@ -33,9 +50,14 @@ public class FuncoesSintaxe01 {
         return aux;
     }
 
-    // FUNÇÃO 03 - MOSTRAR NA TELA
-    public static void mostreResultado(int valor){
-        System.out.print("Lowest = " + valor);
+    // FUNÇÃO 04 - DIFERENÇA
+    public static int diferenca(int maior, int menor){
+        int novoAuxiliar = maior - menor;
+        return novoAuxiliar;
     }
 
+    // FUNCÃO 05 - DIFERENCA
+    public static void showResult(int valor){
+        System.out.println("Diferença dos valores: " + valor);
+    }
 }
