@@ -14,7 +14,7 @@ public class FuncoesSintaxe03 {
         int anos = sc.nextInt();
 
         System.out.println("O funcionário bateu a meta ? (S/N): ");
-        String meta = sc.next();
+        String meta = sc.next().trim().toUpperCase();
 
         double bonus = calcularBonus(salarioBase, anos, meta);
         double salarioFinal = calcularSalarioFinal(salarioBase, bonus);
@@ -33,7 +33,7 @@ public class FuncoesSintaxe03 {
             bonusAuxiliar = salarioBase * 0.05;
         }
 
-        if (meta.equalsIgnoreCase("S")) {
+        if (meta.equals("S")) {
             bonusAuxiliar += 500;
         }
 
