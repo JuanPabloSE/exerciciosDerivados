@@ -24,7 +24,7 @@ public class FuncoesSintaxe03 {
     }
 
     public static double calcularBonus(double salarioBase, int anos, String meta) {
-        double bonusAuxiliar = 0.0;
+        double bonusAuxiliar;
 
         if (anos >= 5) {
             bonusAuxiliar = salarioBase * 0.10;
