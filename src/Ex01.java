@@ -8,26 +8,28 @@ public class Ex01 {
 
         int N = sc.nextInt();
 
-        if (N > 0 && N % 2 == 0) {
-            System.out.println("POSITIVO PAR");
+        double [] [] matriz = new double [N] [N];
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = sc.nextDouble();
+            }
         }
 
-        else if (N > 0 && N % 2 != 0) {
-            System.out.println("POSITIVO IMPAR");
+        // MAIOR NÚMERO DENTRE TODAS AS COLUNAS.
+
+        double maior = matriz[0][0];
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if (matriz[i][j] > maior) {
+                    maior = matriz[i][j];
+                }
+            }
+
+            System.out.println(maior);
+
         }
 
-        else if (N < 0 && N % 2 == 0) {
-            System.out.println("NEGATIVO PAR");
-        }
-
-        else if (N < 0 && N % 2 != 0) {
-            System.out.println("NEGATIVO IMPAR");
-        }
-
-        else {
-            System.out.println("ZERO");
-        }
-
-        sc.close();
     }
 }
